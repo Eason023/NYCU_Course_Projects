@@ -29,7 +29,7 @@ LabVIEW Clock
 > GUI:
 > 
 > ![Clock GUI](./images/GUI1.png)
-
+> 
 > 4 Clock modes:
 >
 > ![4 Clock modes](./images/GUI2.png)
