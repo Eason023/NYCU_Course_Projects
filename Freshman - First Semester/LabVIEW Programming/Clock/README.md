@@ -26,11 +26,11 @@ LabVIEW Clock
 >     - Viewfinder: Displays the corresponding daylight conditions based on the time shown on the 7-segment display.
 >     - Switch between 24-hour and 12-hour display: Use the button to toggle the time format.
 > 
-> GUI:
+GUI:
 > 
 > ![Clock GUI](./images/GUI1.png)
 > 
-> 4 Clock modes:
+4 Clock modes:
 >
 > ![4 Clock modes](./images/GUI2.png)
 > 
