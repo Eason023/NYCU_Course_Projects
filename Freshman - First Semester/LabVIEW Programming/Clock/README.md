@@ -1,5 +1,7 @@
 LabVIEW Clock
 ---
+> **Note: The program may terminate if it tries to access a missing or blank music file. Please replace the file with a valid one.**
+> 
 > A clock with 4 control mode.
 > 
 > - A simple clock built by LabVIEW.
