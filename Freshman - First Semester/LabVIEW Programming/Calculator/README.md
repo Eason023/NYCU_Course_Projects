@@ -13,9 +13,9 @@ LabVIEW Calculator
 > 
 > Standard mode:
 > 
-> ![Calculator GUI](./Calculator/images/GUI1.png)
+> ![Calculator GUI](./images/GUI1.png)
 >
 > Lite mode:
 >
-> ![Calculator GUI2](./Calculator/images/GUI2.png)
+> ![Calculator GUI2](./images/GUI2.png)
 > 
