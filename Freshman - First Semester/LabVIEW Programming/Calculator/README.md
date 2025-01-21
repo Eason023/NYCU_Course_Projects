@@ -1,6 +1,6 @@
 LabVIEW Calculator
 ---
-> My first LabVIEW work.
+> My first LabVIEW work with two type of GUI setup.
 > 
 > - A simple calculator built by LabVIEW.
 > - Syntax error notification function.
@@ -9,13 +9,11 @@ LabVIEW Calculator
 >   - Occasional lags may happen because most things stuck in main thread.
 >   - May encounter few edge cases.
 > 
-> With two type of GUI setup:
-> 
-> Standard mode:
+Standard mode:
 > 
 > ![Calculator GUI](./images/GUI1.png)
 >
-> Lite mode:
+Lite mode:
 >
 > ![Calculator GUI2](./images/GUI2.png)
 > 
