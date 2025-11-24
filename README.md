@@ -4,8 +4,9 @@ To avoid copyright issues, all content that may potentially violate copyright po
 
 **All rights reserved by Eason023. Unauthorized reproduction or plagiarism of this project may result in legal consequences.**
 
+---
+
 # Freshman - First Semester
- ---
 ## LabVIEW Programming
 1. [Calculator](Freshman%20-%20First%20Semester/LabVIEW%20Programming/Calculator "link to file")
 2. [Clock](Freshman%20-%20First%20Semester/LabVIEW%20Programming/Clock "link to file")
@@ -13,9 +14,8 @@ To avoid copyright issues, all content that may potentially violate copyright po
 ## 雲端技術與網路服務實務
 1. [Final Homework](Freshman%20-%20First%20Semester/雲端技術與網路服務實務/Final%20Homework "link to file")
 2. [Final Project - 類LAMP系統實作-以網路管理者為例](Freshman%20-%20First%20Semester/雲端技術與網路服務實務/Final%20Project%20-%20類LAMP系統實作-以網路管理者為例 "link to file")
-
-# Freshman - Second Semester
 ---
+# Freshman - Second Semester
 ## 資料結構與物件導向程式設計
 1. [To-Do list (CLI)](Freshman%20-%20Second%20Semester/資料結構與物件導向程式設計/HW1 "link to file")
 2. [Library Management System (GUI)](Freshman%20-%20Second%20Semester/資料結構與物件導向程式設計/HW2 "link to file")
