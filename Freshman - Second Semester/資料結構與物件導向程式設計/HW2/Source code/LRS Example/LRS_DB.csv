@@ -1,0 +1,43 @@
+14
+26 1 20250516 "Admin"
+24 1 20250516 "EasonLin"
+20 3 20250518 "BookMaster"
+23 1 20250518 "EasonLin"
+20 1 20250520 "Alex"
+25 3 20250520 "EasonLin"
+26 1 20250520 "EasonLin"
+4 5 20250520 "Professor"
+19 1 20250520 "StoryTellor"
+21 1 20250520 "TA_1"
+21 1 20250520 "TA_2"
+21 1 20250520 "TA_3"
+22 1 20250520 "TA_x"
+6 1 20250520 "Who_love E"
+"The Book","Good book","Book publisher","A fascinating series book...",3,"TA","Prof","Student",2025,3,3,81,14
+"The Book2","Good book","Book publisher","A fascinating series book...",3,"TA","Prof","Student",2025,3,3,92,10
+"Book A","ABC book","NCKU","A fascinating book...\\nThis is about A method.",1,"Prof",2015,5,5,60,6
+"Book B","ABC book","NCKU","A fascinating book...\\nThis is about B method.",1,"Prof",2013,5,5,60,2
+"Book C","ABC book","NCKU","A fascinating book...\\nThis is about C method.",1,"Prof",2012,5,0,80,145
+"Book D","ABC book","NCKU","A fascinating book...\\nThis is about D method.",1,"Prof",2013,5,5,60,1
+"Book E","ABC book","NCKU","A fascinating book...\\nThis is about E method.",1,"Prof",2014,5,4,60,6
+"Book F","ABC book","NCKU","A fascinating book...\\nThis is about F method.",1,"Prof",2015,5,5,30,1
+"Book G","ABC book","NCKU","A fascinating book...\\nThis is about G method.",1,"Prof",2017,5,5,60,0
+"Book H","ABC book","NCKU","A fascinating book...\\nThis is about H method.",1,"Prof",2018,5,5,60,4
+"Book I","ABC book","NCKU","A fascinating book...\\nThis is about I method.",1,"Prof",2016,5,5,60,0
+"Book J","ABC book","NCKU","A fascinating book...\\nThis is about J method.",1,"Prof",2020,5,5,60,0
+"Book K","ABC book","NYCU","A fascinating book...\\nThis is about K method.",1,"Prof",2025,5,5,60,6
+"Book L","ABC book","NCKU","A fascinating book...\\nThis is about L method.",1,"Prof",2019,5,5,60,0
+"Book M","ABC book","NCKU","A fascinating book...\\nThis is about M method.",1,"Prof",2021,5,5,60,2
+"Book N","ABC book","NCKU","A fascinating book...\\nThis is about N method.",1,"Prof",2018,5,5,65,11
+"Book O","ABC book","NYCU","A fascinating book...\\nThis is about O method.",1,"Prof",2023,5,5,60,5
+"Book P","ABC book","NYCU","A fascinating book...\\nThis is about P method.",1,"Prof",2024,5,5,60,1
+"The way to rate student","Learning","NYCU","Give students a low rating is my way.\\nLet TA to do this, so I will not be judged.",1,"Prof",2025,15,15,25,26
+"Book of Alien","Story","Fun ground","A fascinating book...",1,"Alex",1950,5,4,60,5
+"Harry Potter","Story","Fun ground","A fascinating magic story...",1,"J. K. Rowling",1997,5,1,92,677
+"The master degree","Degree","NYCU","Go for a master degree is not the only way.\\nThere are millions of jobs you can do.",1,"TA",2025,5,2,65,24
+"The Ph. D","Degree","NTU","Get a Ph. D in 10 years, or...",1,"TA",2025,5,4,70,8
+"The Wonderful Story of CPP","Programming","NYCU","A book of c plus plus.",1,"Student",2025,5,4,72,63
+"The Wonderful Story of OOP","Programming","NYCU","A book of object-oriented programming skills.",1,"Student",2025,5,4,75,60
+"A GUI LRS","Programming","NYCU","A story of a student get 100 in OOP HW2.\\nHe build a library record system with graphic user interface.",1,"Student",2025,5,2,78,76
+"A long overview book, example!","Example","Describer","A fascinating book... huh? really? I don't think so, cuz this book is just a example.\\nAh! I see. Let's read this book.\\nStart!\\nRight now!\\nOVOV\\novov\\nOvOv\\nOVO\\nowl!\\nA little owl\\noow~ oow~ oow~",1,"Student",2025,11,9,60,15
+"Mac and Windows","Computer","InterStation","A fascinating book...",1,"Misc. D",2019,2,2,60,1

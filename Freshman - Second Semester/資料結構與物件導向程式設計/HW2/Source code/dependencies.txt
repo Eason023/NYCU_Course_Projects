@@ -1,0 +1,3 @@
+Dear ImGui: 1.92.0
+GLFW: 3.4
+LLaMA.cpp: b5359
