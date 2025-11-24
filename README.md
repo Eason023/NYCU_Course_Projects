@@ -7,7 +7,7 @@ To avoid copyright issues, all content that may potentially violate copyright po
 ---
 
 # Freshman - First Semester
-## LabVIEW Programming
+## LabVIEW 程式語言
 1. [Calculator](Freshman%20-%20First%20Semester/LabVIEW%20Programming/Calculator "link to file")
 2. [Clock](Freshman%20-%20First%20Semester/LabVIEW%20Programming/Clock "link to file")
 3. [Final Project - Surviv.io unofficial version (AI game)](Freshman%20-%20First%20Semester/LabVIEW%20Programming/Surviv.io%20unofficial%20version%20(AI%20Game) "link to file")
