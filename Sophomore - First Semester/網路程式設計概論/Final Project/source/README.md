@@ -14,8 +14,9 @@ This code provides the basic programs for game players, developers and game serv
   git sparse-checkout init --cone
   git sparse-checkout set "Sophomore - First Semester/網路程式設計概論/Final Project/source/Player"
   git checkout
-  move "Sophomore - First Semester/網路程式設計概論/Final Project/source/Player" ./
-  rd /s /q "Sophomore - First Semester"
+  cd ..
+  move "NYCU_Course_Projects/Sophomore - First Semester/網路程式設計概論/Final Project/source/Player" ./
+  rd /s /q "NYCU_Course_Projects"
   ```
 
   In the downloaded folder, there are files as follow:
@@ -36,8 +37,9 @@ This code provides the basic programs for game players, developers and game serv
   git sparse-checkout init --cone
   git sparse-checkout set "Sophomore - First Semester/網路程式設計概論/Final Project/source/Developer"
   git checkout
-  move "Sophomore - First Semester/網路程式設計概論/Final Project/source/Developer" ./
-  rd /s /q "Sophomore - First Semester"
+  cd ..
+  move "NYCU_Course_Projects/Sophomore - First Semester/網路程式設計概論/Final Project/source/Developer" ./
+  rd /s /q "NYCU_Course_Projects"
   ```
 
   In the downloaded folder, there are files as follow:
