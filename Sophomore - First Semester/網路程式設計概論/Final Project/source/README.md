@@ -4,7 +4,7 @@ Eason's Game Store system
 This code provides the basic programs for game players, developers and game server. The default server is running at: `140.113.17.11:52023`. You can modify these by [***building from source***](#build-from-source). The connection information defined as constants.
 
 ### Quick Start
-**To get start with our system, you should download the source code corresponding to the role you are:**
+**To get started with our system, you should download the source code corresponding to your role:**
 
 - #### [Player for Windows](./Player)
   Download the player client by the following command:
