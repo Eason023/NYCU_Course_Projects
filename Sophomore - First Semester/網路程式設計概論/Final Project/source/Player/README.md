@@ -1,6 +1,6 @@
 Eason's Game Store system - Player
 ---
-#### To get started:
+### To get started:
 
   Download the player client by the following command:
   ``` bash
