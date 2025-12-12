@@ -83,7 +83,7 @@ This code provides the basic programs for game players, developers and game serv
         ├─ (GameXXX)
         └─ (GameXXX)...
   ```
-  Run this command to start your server, first command allow server to modify files:
+  Run these commands to start your server, first command allow server to modify files:
   ```bash
   chmod -R 755 Server/
   cd Server/
