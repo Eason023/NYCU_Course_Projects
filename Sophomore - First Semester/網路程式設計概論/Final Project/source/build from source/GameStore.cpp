@@ -267,13 +267,15 @@ public:
     }
 
     void stop() {
-        unique_lock<mutex> lk(safe_lock_);
-        ping_timer_.cancel();
-        timer_.cancel();
-        pong_timer_.cancel();
-        socket_.close();
-        connected = 0;
-        not_first_time = 1;
+        {
+            unique_lock<mutex> lk(safe_lock_);
+            ping_timer_.cancel();
+            timer_.cancel();
+            pong_timer_.cancel();
+            socket_.close();
+            connected = 0;
+            not_first_time = 1;
+        }
         if (io_thread_.joinable() && this_thread::get_id() != io_thread_.get_id())
             io_thread_.join();
     }
@@ -290,9 +292,15 @@ public:
     //for game process
     uint16_t accept_connection_from_game() {
         game_socket_ = tcp::socket(ioc_);
+        game_acp_.cancel();
         game_acp_.async_accept(game_socket_, [this](asio::error_code ec) {
-            game_forwarding = 1;
-            game_msg_to_server_forwarding();
+            if (!ec) {
+                game_forwarding = 1;
+                game_msg_to_server_forwarding();
+            }
+            else {
+                game_forwarding = 0;
+            }
         });
         return game_acp_.local_endpoint().port();
     }
@@ -300,6 +308,7 @@ public:
     void stop_game_forwarding() {
         game_forwarding = 0;
         game_socket_.close();
+        game_acp_.cancel();
     }
 };
 
@@ -450,6 +459,8 @@ void launch_the_game(string& game_name) {
     int rc = subprocess_create(cmd, subprocess_option_inherit_environment, &game_process);
     if (rc != 0) {
         // error
+        net_server.stop_game_forwarding();
+        ShowToast("Failed to launch game (rc=" + to_string(rc) + "): " + game_name, 6.0f, 2);
         return;
     }
 }
