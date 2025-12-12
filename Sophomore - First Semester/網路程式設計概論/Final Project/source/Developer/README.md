@@ -3,14 +3,14 @@ Eason's Game Store system - Developer
 ### To get started:
 
   Download the developer client by the following commands:
-  ``` bash
+  ``` cmd
   git clone --no-checkout https://github.com/Eason023/NYCU_Course_Projects.git
   cd NYCU_Course_Projects
   git sparse-checkout init --cone
-  git sparse-checkout set --prefix=Developer "Sophomore - First Semester/網路程式設計概論/Final Project/source/Developer"
+  git sparse-checkout set "Sophomore - First Semester/網路程式設計概論/Final Project/source/Developer"
   git checkout
-  mv "Sophomore - First Semester/網路程式設計概論/Final Project/source/Developer" ./
-  rm -rf "Sophomore - First Semester"
+  move "Sophomore - First Semester/網路程式設計概論/Final Project/source/Developer" ./
+  rd /s /q "Sophomore - First Semester"
   ```
   
   In the downloaded folder, there are files as follow:
