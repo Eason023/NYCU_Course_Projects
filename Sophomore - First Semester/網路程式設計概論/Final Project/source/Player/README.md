@@ -1,9 +1,15 @@
 Eason's Game Store system - Player
 ---
-#### To get start:
+#### To get started:
 
   Download the player client by the following command:
-  > ```git clone ```
+  ``` bash
+  git clone --no-checkout https://github.com/Eason023/NYCU_Course_Projects.git
+  cd NYCU_Course_Projects
+  git sparse-checkout init --cone
+  git sparse-checkout set --prefix=Player "Sophomore - First Semester/網路程式設計概論/Final Project/source/Player"
+  git checkout
+  ```
   
   In the downloaded folder, there are files as follow:
   ```
@@ -15,6 +21,6 @@ Eason's Game Store system - Player
   ```
   Double click `GameStore.exe` to run the GameStore.
 
-  ###### Note: Always close the game process before the GameStore process.
+  #### Note: Always close the game process before the GameStore process.
 
   All the user downloaded games will be store in `downloads/user/`. Thus, multiple users have their own individual files.
