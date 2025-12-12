@@ -27,6 +27,7 @@ To avoid copyright issues, all content that may potentially violate copyright po
 #### 網路程式設計概論
 1. [HW1 Two-Player ConnectFour Online Game (CLI)](Sophomore%20-%20First%20Semester/網路程式設計概論/HW1 "link to file")
 2. [HW2 Two-Player Tetris Online Game (GUI)](Sophomore%20-%20First%20Semester/網路程式設計概論/HW2 "link to file")
+3. [Final Project - The Game Store system](Sophomore%20-%20First%20Semester/網路程式設計概論/Final%20Project "link to file")
 #### 數位電路實驗
 #### Go 程式設計
 #### 圖形理論概論
