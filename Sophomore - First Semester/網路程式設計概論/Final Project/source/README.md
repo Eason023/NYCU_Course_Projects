@@ -14,6 +14,8 @@ This code provides the basic programs for game players, developers and game serv
   git sparse-checkout init --cone
   git sparse-checkout set --prefix=Player "Sophomore - First Semester/網路程式設計概論/Final Project/source/Player"
   git checkout
+  mv "Sophomore - First Semester/網路程式設計概論/Final Project/source/Player" ./
+  rm -rf "Sophomore - First Semester"
   ```
 
   In the downloaded folder, there are files as follow:
@@ -34,6 +36,8 @@ This code provides the basic programs for game players, developers and game serv
   git sparse-checkout init --cone
   git sparse-checkout set --prefix=Developer "Sophomore - First Semester/網路程式設計概論/Final Project/source/Developer"
   git checkout
+  mv "Sophomore - First Semester/網路程式設計概論/Final Project/source/Developer" ./
+  rm -rf "Sophomore - First Semester"
   ```
 
   In the downloaded folder, there are files as follow:
@@ -68,6 +72,8 @@ This code provides the basic programs for game players, developers and game serv
   git sparse-checkout init --cone
   git sparse-checkout set --prefix=Server "Sophomore - First Semester/網路程式設計概論/Final Project/source/Server"
   git checkout
+  mv "Sophomore - First Semester/網路程式設計概論/Final Project/source/Server" ./
+  rm -rf "Sophomore - First Semester"
   ```
 
   In the downloaded folder, there are files as follow:
@@ -109,6 +115,8 @@ However, you can add these capabilities by **building from the source code**. He
     git sparse-checkout init --cone
     git sparse-checkout set --prefix=source "Sophomore - First Semester/網路程式設計概論/Final Project/source"
     git checkout
+    mv "Sophomore - First Semester/網路程式設計概論/Final Project/sourcer" ./
+    rm -rf "Sophomore - First Semester"
     cd source/
     ```
 2. Build server: (Linux)
