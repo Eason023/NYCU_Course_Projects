@@ -9,6 +9,8 @@ Eason's Game Store system - Developer
   git sparse-checkout init --cone
   git sparse-checkout set --prefix=Developer "Sophomore - First Semester/網路程式設計概論/Final Project/source/Developer"
   git checkout
+  mv "Sophomore - First Semester/網路程式設計概論/Final Project/source/Developer" ./
+  rm -rf "Sophomore - First Semester"
   ```
   
   In the downloaded folder, there are files as follow:
