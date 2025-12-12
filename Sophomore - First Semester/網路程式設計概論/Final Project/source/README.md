@@ -3,6 +3,8 @@ Eason's Game Store system
 
 This code provides the basic programs for game players, developers and game server. The default server is running at: `140.113.17.11:52023`. You can modify these by [***building from source***](#build-from-source). The connection information defined as constants.
 
+**Note for Player: If you encounter the error Failed to launch game (rc=1), this often indicates a directory path error. Do not install the game executable in unstable directories, such as OneDrive.**
+
 ### Quick Start
 **To get started with our system, you should download the source code corresponding to your role:**
 
