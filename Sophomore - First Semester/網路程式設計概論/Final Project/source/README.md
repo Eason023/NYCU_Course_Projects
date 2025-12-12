@@ -7,7 +7,7 @@ This code provides the basic programs for game players, developers and game serv
 **To get started with our system, you should download the source code corresponding to your role:**
 
 - #### [Player for Windows](./Player)
-  Download the player client by the following command:
+  Download the player client by the following commands:
   ``` bash
   git clone --no-checkout https://github.com/Eason023/NYCU_Course_Projects.git
   cd NYCU_Course_Projects
@@ -27,7 +27,7 @@ This code provides the basic programs for game players, developers and game serv
   Double click `GameStore.exe` to run the GameStore.
 
 - #### [Game Developer for Windows](./Developer)
-  Download the developer client by the following command:
+  Download the developer client by the following commands:
   ``` bash
   git clone --no-checkout https://github.com/Eason023/NYCU_Course_Projects.git
   cd NYCU_Course_Projects
@@ -61,7 +61,7 @@ This code provides the basic programs for game players, developers and game serv
   You can design your game server and game client following to our [***APIs***](./Developer/Games_in_development/EasonGS_API). While developing the game server and client, please follow the instruction in the documents.
 
 - #### [Server](./Server)
-  Download the game store server by the following command:
+  Download the game store server by the following commands:
   ``` bash
   git clone --no-checkout https://github.com/Eason023/NYCU_Course_Projects.git
   cd NYCU_Course_Projects
@@ -102,7 +102,7 @@ This project provide the very basic codebase for server, player, and developer t
 
 However, you can add these capabilities by **building from the source code**. Here's how to build the client and server:
 
-1. Download source code by the following command:
+1. Download source code by the following commands:
     ``` bash
     git clone --no-checkout https://github.com/Eason023/NYCU_Course_Projects.git
     cd NYCU_Course_Projects
