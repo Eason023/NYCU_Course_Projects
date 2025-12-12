@@ -1,6 +1,6 @@
 Eason's Game Store system - Server
 ---
-#### To get start:
+### To get started:
 
   Download the game store server by the following commands:
   ``` bash
