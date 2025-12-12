@@ -16,6 +16,8 @@ Eason's Game Store system - Server
   Server
     |  README.md
     │  server
+    ├─ subprocess
+    ├─ asio
     └─ games
         ├─ EasonGS_API
         ├─ (GameXXX)
