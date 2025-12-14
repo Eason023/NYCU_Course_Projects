@@ -1142,7 +1142,7 @@ private:
                                             uint32_t uid = ThisClient.user_id;
                                             GamePage gp = uploading_game_page;
                                             // compile in a new thread
-                                            thread upload_thread([this, uid, gp]() {
+                                            thread upload_thread([uid, gp]() {
                                                 string folder_name = "games/" + gp.game_name + "/tmp/";
                                                 int ret = system(("g++ \"" + folder_name + gp.game_name + ".cpp\" " + " \"games/EasonGS_API/EasonGS_Server.cpp\" " + "-I games/EasonGS_API/asio -I games/EasonGS_API -std=c++20 " +
                                                     "-o \"" + folder_name + gp.game_name + "\"").c_str());
@@ -1154,15 +1154,16 @@ private:
                                                     create_version_file(gp.game_name, make_tuple(0, 0, 1));
                                                 }
                                                 // post the result back to the asio context to avoid race condition
-                                                asio::post(client_ioc_, [this, uid, gp, ret]() {
+                                                asio::post(client_ioc_, [uid, gp, ret]() {
                                                     if (ret == 0) {
                                                         gid_to_none_public_game_page[gp.game_id] = gp;
                                                         user_id_to_User[uid].owned_game_file_IDs.insert(gp.game_id / 100);
-                                                        send_packet(51, uint32_to_bytes(gp.game_id));
+                                                        if (user_id_to_NetServer.find(uid) != user_id_to_NetServer.end())
+                                                            user_id_to_NetServer[uid]->send_packet(51, uint32_to_bytes(gp.game_id));
                                                         write_log("TheGameStore", user_id_to_User[uid].account + " uploaded a new game: " + gp.game_name);
                                                     }
-                                                    else
-                                                        send_reject("Compilation error, please check your code and re-upload the files.");
+                                                    else if (user_id_to_NetServer.find(uid) != user_id_to_NetServer.end())
+                                                        user_id_to_NetServer[uid]->send_reject("Compilation error, please check your code and re-upload the files.");
                                                 });
                                             });
                                             upload_thread.detach();
@@ -1350,7 +1351,7 @@ private:
                                         uint32_t uid = ThisClient.user_id;
                                         GamePage gp = uploading_game_page;
                                         // compile in a new thread
-                                        thread upload_thread([this, uid, gp]() {
+                                        thread upload_thread([uid, gp]() {
                                             string folder_name = "games/" + gp.game_name + "/tmp/";
                                             int ret = system(("g++ \"" + folder_name + gp.game_name + ".cpp\" " + " \"games/EasonGS_API/EasonGS_Server.cpp\" " + "-I games/EasonGS_API/asio -I games/EasonGS_API -std=c++20 " +
                                                 "-o \"" + folder_name + gp.game_name + "\"").c_str());
@@ -1362,7 +1363,7 @@ private:
                                                 create_version_file(gp.game_name, make_tuple(gp.version[0], gp.version[1], gp.version[2]));
                                             }
                                             // post the result back to the asio context to avoid race condition
-                                            asio::post(client_ioc_, [this, uid, gp, ret]() {
+                                            asio::post(client_ioc_, [uid, gp, ret]() {
                                                 if (ret == 0) {
                                                     gid_to_none_public_game_page[gp.game_id] = gid_to_none_public_game_page[gp.game_id - 1];
                                                     gid_to_none_public_game_page.erase(gp.game_id - 1);
@@ -1373,11 +1374,12 @@ private:
                                                     new_gp.version[2] = gp.version[2];
                                                     new_gp.max_room_number = gp.max_room_number;
                                                     new_gp.max_players_per_room = gp.max_players_per_room;
-                                                    send_packet(59, uint32_to_bytes(gp.game_id));
+                                                    if (user_id_to_NetServer.find(uid) != user_id_to_NetServer.end())
+                                                        user_id_to_NetServer[uid]->send_packet(59, uint32_to_bytes(gp.game_id));
                                                     write_log("TheGameStore", user_id_to_User[uid].account + " updated the game: " + gp.game_name);
                                                 }
-                                                else
-                                                    send_reject("Compilation error, please check your code and re-upload the files.");
+                                                else if (user_id_to_NetServer.find(uid) != user_id_to_NetServer.end())
+                                                    user_id_to_NetServer[uid]->send_reject("Compilation error, please check your code and re-upload the files.");
                                             });
                                         });
                                         upload_thread.detach();
