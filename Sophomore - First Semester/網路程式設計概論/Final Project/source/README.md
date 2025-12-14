@@ -105,7 +105,7 @@ This code provides the basic programs for game players, developers and game serv
   1. This system is designed for Windows client. However, it is possible to use different ImGUI backend for other OS.
   2. To replace the backend of the GameStore or DevGameStore, you should try to [***build from source***](#build-from-source).
   3. The server and client do not have any encryption or security connection, you can add it on your own by [***building from source***](#build-from-source)
-  4. **Be patient, don't exit the program while there are any game or downloading/uploading process is in progress.**
+  4. **Be patient, don't exit the program while there are any game or downloading/uploading process in progress.**
 
 ### Build from source
 This project provide the very basic codebase for server, player, and developer to communicate throught TCP. It cannot be deployed for a real use case without security and data encryption in place.
