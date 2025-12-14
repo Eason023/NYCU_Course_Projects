@@ -452,10 +452,9 @@ void append_bytes_to_game_file(string& game_name, vector<uint8_t>& bytes, size_t
 subprocess_s game_process = { 0 };
 void launch_the_game(string& game_name) {
     uint16_t game_process_port = net_server.accept_connection_from_game();
-    string game_folder = "downloads/" + username + "/" + game_name + "/";
-    string execute_path = "./" + game_folder + game_name + ".exe";
+    string exe = std::filesystem::absolute("downloads/" + username + "/" + game_name + "/" + game_name + ".exe").string();
     string the_port = to_string(game_process_port);
-    const char* cmd[] = { execute_path.c_str(), the_port.c_str(), NULL };
+    const char* cmd[] = { exe.c_str(), the_port.c_str(), NULL };
     int rc = subprocess_create(cmd, subprocess_option_inherit_environment, &game_process);
     if (rc != 0) {
         // error
