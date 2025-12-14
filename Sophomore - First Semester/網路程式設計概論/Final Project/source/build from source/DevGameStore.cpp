@@ -285,13 +285,15 @@ public:
     }
 
     void stop() {
-        unique_lock<mutex> lk(safe_lock_);
-        ping_timer_.cancel();
-        timer_.cancel();
-        pong_timer_.cancel();
-        socket_.close();
-        connected = 0;
-        not_first_time = 1;
+        {
+            unique_lock<mutex> lk(safe_lock_);
+            ping_timer_.cancel();
+            timer_.cancel();
+            pong_timer_.cancel();
+            socket_.close();
+            connected = 0;
+            not_first_time = 1;
+        }
         if (io_thread_.joinable() && this_thread::get_id() != io_thread_.get_id())
             io_thread_.join();
     }
