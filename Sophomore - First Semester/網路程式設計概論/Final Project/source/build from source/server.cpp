@@ -717,14 +717,10 @@ private:
                             set<uint32_t>& my_dev_games = user_id_to_User[ThisClient.user_id].owned_game_file_IDs;
                             for (auto& gfid : my_dev_games) {
                                 uint32_t target_search_key = (gfid + 1) * 100;
-
-                                // --- 修正開始：檢查 Public 遊戲 ---
                                 if (!gid_to_game_page.empty()) {
                                     size_t idx = gid_to_game_page.order_of_key(target_search_key);
-                                    // 關鍵修正：必須 idx > 0 才能減 1，否則會溢位
                                     if (idx > 0) {
                                         auto it = gid_to_game_page.find_by_order(idx - 1);
-                                        // 再次確認找到的遊戲確實屬於這個 gfid
                                         if (it != gid_to_game_page.end() && it->first / 100 == gfid) {
                                             uint32_t gfid_game_id = it->first;
                                             vector<uint8_t> gid_tmp = uint32_to_bytes(gfid_game_id);
@@ -732,14 +728,10 @@ private:
                                         }
                                     }
                                 }
-
-                                // --- 修正開始：檢查 Private (Non-Public) 遊戲 ---
                                 if (!gid_to_none_public_game_page.empty()) {
                                     size_t idx = gid_to_none_public_game_page.order_of_key(target_search_key);
-                                    // 關鍵修正：必須 idx > 0 才能減 1
                                     if (idx > 0) {
                                         auto it = gid_to_none_public_game_page.find_by_order(idx - 1);
-                                        // 再次確認
                                         if (it != gid_to_none_public_game_page.end() && it->first / 100 == gfid) {
                                             uint32_t gfid_game_id = it->first;
                                             vector<uint8_t> gid_tmp = uint32_to_bytes(gfid_game_id);
@@ -747,7 +739,6 @@ private:
                                         }
                                     }
                                 }
-                                // --- 修正結束 ---
                             }
                         }
                         send_packet(11, data);
