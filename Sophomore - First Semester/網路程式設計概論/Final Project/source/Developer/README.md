@@ -52,17 +52,17 @@ Let's use [***GuessNumber***](./Examples/GuessNumber-CLI_Game) (Multi-player CLI
 
   1. To build the GuessNumber CLI game client on Windows:
      ``` bash
-     g++ "GuessNumberClient.cpp" "EasonGS_API/EasonGS_Client.cpp" -I EasonGS_API/asio -I EasonGS_API -std=c++20 -static -static-libgcc -static-libstdc++ -o "GuessNumberClient.exe" -lws2_32 -lwinpthread
+     g++ "GuessNumberClient.cpp" "EasonGS_API/EasonGS_Client.cpp" -I EasonGS_API/asio -I EasonGS_API -std=c++20 -static -static-libgcc -static-libstdc++ -o "GuessNumberClient.exe" -lws2_32 -lwinpthread -static -static-libgcc -static-libstdc++
      ```
 
   2. To build the TicTacToe GUI game client on Windows:
       ``` bash
-      g++ "TicTacToeClient.cpp" "EasonGS_API/EasonGS_Client.cpp" imgui/imgui.cpp imgui/imgui_stdlib.cpp imgui/imgui_draw.cpp imgui/imgui_widgets.cpp imgui/imgui_demo.cpp imgui/imgui_tables.cpp imgui/imgui_impl_glfw.cpp imgui/imgui_impl_opengl3.cpp -I EasonGS_API/asio -I EasonGS_API -I imgui -I glfw/include glfw/lib-mingw-w64/libglfw3.a -Lglfw/lib-mingw-w64 -lopengl32 -lgdi32 -lws2_32 -lmswsock -std=c++20 -o "TicTacToeClient.exe" -mwindows
+      g++ "TicTacToeClient.cpp" "EasonGS_API/EasonGS_Client.cpp" imgui/imgui.cpp imgui/imgui_stdlib.cpp imgui/imgui_draw.cpp imgui/imgui_widgets.cpp imgui/imgui_demo.cpp imgui/imgui_tables.cpp imgui/imgui_impl_glfw.cpp imgui/imgui_impl_opengl3.cpp -I EasonGS_API/asio -I EasonGS_API -I imgui -I glfw/include glfw/lib-mingw-w64/libglfw3.a -Lglfw/lib-mingw-w64 -lopengl32 -lgdi32 -lws2_32 -lmswsock -std=c++20 -o "TicTacToeClient.exe" -mwindows -static -static-libgcc -static-libstdc++
       ```
 
   3. To build the CoinTake GUI game client on Windows:
       ``` bash
-     g++ "CoinTakeClient.cpp" "EasonGS_API/EasonGS_Client.cpp" imgui/imgui.cpp imgui/imgui_stdlib.cpp imgui/imgui_draw.cpp imgui/imgui_widgets.cpp imgui/imgui_demo.cpp imgui/imgui_tables.cpp imgui/imgui_impl_glfw.cpp imgui/imgui_impl_opengl3.cpp -I EasonGS_API/asio -I EasonGS_API -I imgui -I glfw/include glfw/lib-mingw-w64/libglfw3.a -Lglfw/lib-mingw-w64 -lopengl32 -lgdi32 -lws2_32 -lmswsock -std=c++20 -o "CoinTakeClient.exe" -mwindows
+     g++ "CoinTakeClient.cpp" "EasonGS_API/EasonGS_Client.cpp" imgui/imgui.cpp imgui/imgui_stdlib.cpp imgui/imgui_draw.cpp imgui/imgui_widgets.cpp imgui/imgui_demo.cpp imgui/imgui_tables.cpp imgui/imgui_impl_glfw.cpp imgui/imgui_impl_opengl3.cpp -I EasonGS_API/asio -I EasonGS_API -I imgui -I glfw/include glfw/lib-mingw-w64/libglfw3.a -Lglfw/lib-mingw-w64 -lopengl32 -lgdi32 -lws2_32 -lmswsock -std=c++20 -o "CoinTakeClient.exe" -mwindows -static -static-libgcc -static-libstdc++
       ```
 
 The server will compile the `server.cpp` using `-I EasonGS_API/asio -I EasonGS_API -std=c++20`. Please refer to our [***template***](./DevGameTemplate) design file for `server.cpp`.
