@@ -52,7 +52,7 @@ Let's use [***GuessNumber***](./Examples/GuessNumber-CLI_Game) (Multi-player CLI
 
   1. To build the GuessNumber CLI game client on Windows:
      ``` bash
-     g++ "GuessNumberClient.cpp" "EasonGS_API/EasonGS_Client.cpp" -I EasonGS_API/asio -I EasonGS_API -std=c++20 -static -static-libgcc -static-libstdc++ -o "GuessNumberClient.exe" -lws2_32 -lwinpthread -static -static-libgcc -static-libstdc++
+     g++ "GuessNumberClient.cpp" "EasonGS_API/EasonGS_Client.cpp" -I EasonGS_API/asio -I EasonGS_API -std=c++20 -static -static-libgcc -static-libstdc++ -o "GuessNumberClient.exe" -lws2_32 -lwinpthread
      ```
 
   2. To build the TicTacToe GUI game client on Windows:
